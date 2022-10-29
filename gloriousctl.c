@@ -554,7 +554,7 @@ int main(int argc, char* argv[])
 
                 unsigned int debounce_time = 0;
                 sscanf(set_debounce_time, "%u", &debounce_time);
-                if(debounce_time < 4 || debounce_time > 16) {
+                if(debounce_time < 2 || debounce_time > 16) {
                     printf("Trying to set an insane debounce time: %d ms\n", debounce_time);
                     return 1;
                 }
